@@ -1,5 +1,6 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
 export default class App extends React.Component {
   render() {
@@ -10,6 +11,12 @@ export default class App extends React.Component {
     );
   }
 }
+
+const appNavigator = createSwitchNavigator({
+
+});
+
+const AppContainer = createAppContainer(appNavigator);
 
 const styles = StyleSheet.create({
   container: {
